@@ -1,7 +1,7 @@
 ---
 title: Release Notes for WSL kernel 
 description: Release notes for the Windows Subsystem for Linux.  Updated monthly.
-keywords: release notes, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, kernel
+keywords: [release notes, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, kernel]
 ms.date: 09/27/2021
 ms.topic: article
 ---

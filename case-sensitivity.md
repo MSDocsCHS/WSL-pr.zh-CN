@@ -1,7 +1,7 @@
 ---
 title: Case Sensitivity
 description: Learn how case sensitive file names are handled between Windows and Linux file systems, how to adjust these settings by directory with WSL, and how to troubleshoot issues.
-keywords: case sensitivity, wsl, windows, linux, ntfs, mount
+keywords: [case sensitivity, wsl, windows, linux, ntfs, mount]
 ms.date: 09/27/2021
 ms.topic: article
 ---

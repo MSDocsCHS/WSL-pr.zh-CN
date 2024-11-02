@@ -1,7 +1,7 @@
 ---
 title: Accessing network applications with WSL
 description: Learn about the considerations for accessing network applications when using Windows Subsystem for Linux (WSL).
-keywords: wsl, Linux, Windows, networking, ip address, ip addr, host IP, server, network, localhost, local area network, lan, ipv6, remote
+keywords: [wsl, Linux, Windows, networking, ip address, ip addr, host IP, server, network, localhost, local area network, lan, ipv6, remote]
 ms.date: 07/16/2024
 ms.topic: article
 ---

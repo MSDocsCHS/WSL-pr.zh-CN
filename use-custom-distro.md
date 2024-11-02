@@ -1,7 +1,7 @@
 ---
 title: Import any Linux distribution to use with WSL
 description: Learn how to import any Linux distribution to use with the Windows Subsystem for Linux.
-keywords: BashOnWindows, bash, wsl, windows, windows subsystem, distro, custom
+keywords: [BashOnWindows, bash, wsl, windows, windows subsystem, distro, custom]
 ms.date: 09/27/2021
 ms.topic: article
 ---

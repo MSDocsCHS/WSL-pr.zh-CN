@@ -13,6 +13,8 @@ Windows Subsystem for Linux (WSL) lets developers run a GNU/Linux environment --
 > [!div class="nextstepaction"]
 > [Install WSL](install.md)
 
+<a class="button button--primary" href="install">Install WSL</a>
+
 ## Learn more
 
 * [What is the Windows Subsystem for Linux (WSL)?](about.md)

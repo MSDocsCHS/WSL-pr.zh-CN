@@ -1,0 +1,42 @@
+name: Sync Fork with Upstream and Create PR
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜自动运行
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+
+      - name: Add upstream repository
+        run: |
+          git remote add upstream https://github.com/MicrosoftDocs/WSL.git  # 替换为上游仓库地址
+          git fetch upstream
+          git checkout -b sync-upstream-branch
+          git merge upstream/main --no-commit
+
+      - name: Commit changes
+        run: |
+          git commit -m "Sync with upstream changes" || echo "No changes to commit"
+
+      - name: Push changes to fork
+        run: |
+          git push -u origin sync-upstream-branch
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Sync with upstream changes
+          branch: sync-upstream-branch
+          title: "Sync with upstream"
+          body: "This PR keeps the fork in sync with the upstream repository."
+          

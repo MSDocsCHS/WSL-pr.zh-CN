@@ -1,88 +1,85 @@
 ---
-title: Windows Subsystem for Linux Documentation
-description: Overview of the Windows Subsystem for Linux documentation.
+title: 适用于 Linux 的 Windows 子系统文档
+description: 适用于 Linux 的 Windows 子系统文档概述
 ms.topic: overview
 ms.date: 12/06/2021
 ms.custom: seo-windows-dev
 ---
 
-# Windows Subsystem for Linux Documentation
+# 适用于 Linux 的 Windows 子系统文档
 
-Windows Subsystem for Linux (WSL) lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dual-boot setup.
+适用于 Linux 的 Windows 子系统（WSL）可让开发人员直接在 Windows 上按原样运行 GNU/Linux 环境（包括大多数命令行工具、实用工具和应用程序），且不会产生传统虚拟机或双启动设置开销。
 
-> [!div class="nextstepaction"]
-> [Install WSL](install.md)
+<a class="button button--primary" href="install">安装 WSL</a>
 
-<a class="button button--primary" href="install">Install WSL</a>
+## 了解更多
 
-## Learn more
+* [什么是适用于 Linux 的 Windows 子系统（WSL）？](about.md)
+* [WSL 2 有什么新东西？](compare-versions.md#whats-new-in-wsl-2)
+* [比较 WSL 1 和 WSL 2](compare-versions.md)
+* [常见问题](faq.md)
 
-* [What is the Windows Subsystem for Linux (WSL)?](about.md)
-* [What's new with WSL 2?](compare-versions.md#whats-new-in-wsl-2)
-* [Comparing WSL 1 and WSL 2](compare-versions.md)
-* [Frequently Asked Questions](faq.yml)
+## 入门
 
-## Get started
+* [安装 WSL](install.md)
+* [在 Windows Server 上安装 Linux](install-on-server.md)
+* [手动安装步骤](install-manual.md)
+* [设置 WSL 开发环境的最佳实践](./setup/environment.md)
 
-* [Install WSL](install.md)
-* [Install Linux on Windows Server](install-on-server.md)
-* [Manual install steps](install-manual.md)
-* [Best practices for setting up a WSL development environment](./setup/environment.md)
+## 通过加入 Windows 预览体验计划来试用 WSL 的预览版功能
 
-## Try WSL preview features by joining the Windows Insiders Program
+若要尝试 WSL 的最新功能或更新，请加入 [Windows 预览体验计划](https://insider.windows.com/getting-started)。加入 Windows 预览体验计划后，你可以在 Windows 设置中选择你希望用于接收预览体验版本的频道。这些频道可供选择：
 
-To try the most recent features or updates to WSL, join the [Windows Insiders Program](https://insider.windows.com/getting-started). Once you have joined Windows Insiders, you can choose the channel you would like to receive preview builds from inside the Windows settings menu. You can choose from:
+* Dev 与 Canary 频道：最新的更新，但稳定性欠佳。
+* Beta 频道：早鸟的理想之选，与 Dev 与 Canary 频道相比更为稳定。
+* Release Preview（发布预览）频道：在公开发布前，预览下一版 Windows 上的修复和重要功能。
 
-* Dev channel: Most recent updates, but low stability.
-* Beta channel: Ideal for early adopters, more reliable builds than the Dev channel.
-* Release Preview channel: Preview fixes and key features on the next version of Windows just before its available to the general public.
+## 团队博客
 
-## Team blogs
+* [包含视频与博文合集的概述文章](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
+* [命令行博客](https://blogs.msdn.microsoft.com/commandline/)（活跃）
+* [WSL 博客](https://learn.microsoft.com/zh-cn/archive/blogs/wsl/)（历史存档）
 
-* [Overview post with a collection of videos and blogs](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
-* [Command-Line blog](https://blogs.msdn.microsoft.com/commandline/) (Active)
-* [Windows Subsystem for Linux Blog](/archive/blogs/wsl/) (Historical)
+## 提供反馈
 
-## Provide feedback
+* [GitHub 问题跟踪器：WSL](https://github.com/microsoft/WSL/issues)
+* [GitHub 问题跟踪器：WSL 文档](https://github.com/MicrosoftDocs/WSL/issues)
 
-* [GitHub issue tracker: WSL](https://github.com/microsoft/WSL/issues)
-* [GitHub issue tracker: WSL documentation](https://github.com/MicrosoftDocs/WSL/issues)
+## 相关视频
 
-## Related videos
+**WSL 基础**
 
-**WSL BASICS**
+1. [什么是适用于 Linux 的 Windows 子系统（WSL）？](https://www.youtube.com/watch?v=NYGMY9c90Oo) | One Dev Question（0:40）
+1. [我是一名 Windows 开发者。我为什么要使用 WSL？|](https://www.youtube.com/watch?v=sqdHy1rC2t4) One Dev Question（0:58）
+1. [我是一名 Windows 开发者。我为什么要使用 WSL？](https://www.youtube.com/watch?v=75JBKfAqH3I) | One Dev Question（1:04）
+1. [Linux 是什么？](https://www.youtube.com/watch?v=jx5I-8_arqM) | One Dev Question（1:31）
+1. [什么是 Linux 发行版？](https://www.youtube.com/watch?v=WnzKfwL3Iy0) | One Dev Question（1:04）
+1. [WSL 与虚拟机或双系统有何不同？](https://www.youtube.com/watch?v=UMQ5GQix0rs) | One Dev Question
+1. [为什么要推出适用于 Linux 的 Windows 子系统？](https://www.youtube.com/watch?v=b9I7NZHni5c) | One Dev Question（1:14）
+1. [如何在 WSL 中访问计算机上的文件？](https://www.youtube.com/watch?v=uUaFNRRS9yo&t=2s) | One Dev Question（1:41）
+1. [WSL 如何与 Windows 集成？](https://www.youtube.com/watch?v=JuJ_Nx_bFEM) | One Dev Question（1:34）
+1. [如何配置 Windows 终端来让 WSL 发行版在用户目录（~）中启动？](https://www.youtube.com/watch?v=n1YSFT5VK-Y) | One Dev Question（0:47）
+1. [我能用 WSL 编写脚本吗？](https://www.youtube.com/watch?v=teI6WA48_Rg) | One Dev Question（1:04）
+1. [我为什么会想在 Windows 上使用 Linux 工具？](https://www.youtube.com/watch?v=OeomwrHLAR4) | One Dev Question（1:20）
+1. [我可以在 WSL 中使用 Microsoft Store 以外的发行版吗？](https://www.youtube.com/watch?v=AfhDwVASD2c) | One Dev Question（1:03）
 
-1. [What is the Windows Subsystem for Linux (WSL)?](https://www.youtube.com/watch?v=NYGMY9c90Oo) | One Dev Question (0:40)
-1. [I'm a Windows developer. Why should I use WSL? |](https://www.youtube.com/watch?v=sqdHy1rC2t4) One Dev Question (0:58)
-1. [I'm a Linux developer. Why should I use WSL?](https://www.youtube.com/watch?v=75JBKfAqH3I) | One Dev Question (1:04)
-1. [What is Linux?](https://www.youtube.com/watch?v=jx5I-8_arqM) | One Dev Question (1:31)
-1. [What is a Linux distro?](https://www.youtube.com/watch?v=WnzKfwL3Iy0) | One Dev Question (1:04)
-1. [How is WSL different than a virtual machine or dual booting?](https://www.youtube.com/watch?v=UMQ5GQix0rs) | One Dev Question
-1. [Why was the Windows Subsystem for Linux created?](https://www.youtube.com/watch?v=b9I7NZHni5c) | One Dev Question (1:14)
-1. [How do I access files on my computer in WSL?](https://www.youtube.com/watch?v=uUaFNRRS9yo&t=2s) | One Dev Question (1:41)
-1. [How is WSL integrated with Windows?](https://www.youtube.com/watch?v=JuJ_Nx_bFEM) | One Dev Question (1:34)
-1. [How do I configure a WSL distro to launch in the home directory in Terminal?](https://www.youtube.com/watch?v=n1YSFT5VK-Y) | One Dev Question (0:47)
-1. [Can I use WSL for scripting?](https://www.youtube.com/watch?v=teI6WA48_Rg) | One Dev Question (1:04)
-1. [Why would I want to use Linux tools on Windows?](https://www.youtube.com/watch?v=OeomwrHLAR4) | One Dev Question (1:20)
-1. [In WSL, can I use distros other than the ones in the Microsoft Store?](https://www.youtube.com/watch?v=AfhDwVASD2c) | One Dev Question (1:03)
+**WSL 演示**
 
-**WSL DEMOS**
+1. [WSL2：在适用于 Linux 的 Windows 子系统上更快地「撸码」！](https://www.youtube.com/watch?v=MrZolfGm8Zk&t=3s) | Tabs vs Spaces（13:42）
+1. [WSL：运行 Linux 中的图形化应用程序](https://www.youtube.com/watch?v=kC3eWRPzeWw) | Tabs vs Spaces（17:16）
+1. [WSL 2：连接 USB 设备](https://www.youtube.com/watch?v=I2jOuLU4o8E) | Tabs vs Spaces（10:08）
+1. [WSL 2 中由 GPU 加速的机器学习](https://www.youtube.com/watch?v=PdxXlZJiuxA) | Tabs vs Spaces（16:28）
+1. [Visual Studio Code：通过 SSH，虚拟机和 WSL 进行远程开发](https://www.youtube.com/watch?v=XkLjxr9iQ-8&t=1s) | Tabs vs Spaces（29:33）
+1. [Windows 开发者工具上新：WSL，终端，包管理器，和其他东西！](https://www.youtube.com/watch?v=m5tt9mDRPSw) | Tabs vs Spaces（20:46）
+1. [通过 WSL 构建 Node.JS 应用程序](https://www.youtube.com/watch?v=lOXatmtBb88) | Highlight（3:15）
+1. [WSL 2 中新的内存回收功能](https://www.youtube.com/watch?v=K9GPOHrZgr4) | Demo（6:01）
+1. [Windows 上的 Web 开发（2019）](https://www.youtube.com/watch?v=UxWN1BBr1bM) | Demo（10:39）
 
-1. [WSL2: Code faster on the Windows Subsystem for Linux!](https://www.youtube.com/watch?v=MrZolfGm8Zk&t=3s) | Tabs vs Spaces (13:42)
-1. [WSL: Run Linux GUI Apps](https://www.youtube.com/watch?v=kC3eWRPzeWw) | Tabs vs Spaces (17:16)
-1. [WSL 2: Connect USB devices](https://www.youtube.com/watch?v=I2jOuLU4o8E) | Tabs vs Spaces (10:08)
-1. [GPU Accelerated Machine Learning with WSL 2](https://www.youtube.com/watch?v=PdxXlZJiuxA) | Tabs vs Spaces (16:28)
-1. [Visual Studio Code: Remote Dev with SSH, VMs, and WSL](https://www.youtube.com/watch?v=XkLjxr9iQ-8&t=1s) | Tabs vs Spaces (29:33)
-1. [Windows Dev Tool Updates: WSL, Terminal, Package Manager, and more](https://www.youtube.com/watch?v=m5tt9mDRPSw) | Tabs vs Spaces (20:46)
-1. [Build Node.JS apps with WSL](https://www.youtube.com/watch?v=lOXatmtBb88) | Highlight (3:15)
-1. [New memory reclaim feature in WSL 2](https://www.youtube.com/watch?v=K9GPOHrZgr4) | Demo (6:01)
-1. [Web development on Windows (in 2019)](https://www.youtube.com/watch?v=UxWN1BBr1bM) | Demo (10:39)
+**深入了解 WSL**
 
-**WSL DEEP DIVES**
-
-1. [WSL on Windows 11 - Demos with Craig Loewen and Scott Hanselman](https://www.youtube.com/watch?v=pNwatyeXplY)| Windows Wednesday (35:48)
-1. [WSL and Linux Distributions – Hayden Barnes and Kayla Cinnamon](https://www.youtube.com/watch?v=kCB3gO32SPs) | Windows Wednesday (37:00)
-1. [Customize your terminal with Oh My Posh and WSL Linux distros](https://www.youtube.com/watch?v=uO_F5W2LbSk) | Windows Wednesday (33:14)
-1. [Web dev Sarah Tamsin and Craig Loewen chat about web development, content creation, and WSL](https://www.youtube.com/watch?v=ySS8Re6LDTQ) | Dev Perspectives (12:22)
-1. [How WSL accesses Linux files from Windows](https://www.youtube.com/watch?v=63wVlI9B3Ac&t=45s) | Deep dive (24:59)
-1. [Windows subsystem for Linux architecture: a deep dive](https://www.youtube.com/watch?v=lwhMThePdIo) | Build 2019 (58:10)
+1. [Windows 11 上的 WSL - Craig Loewen 和 Scott Hanselman 的演示](https://www.youtube.com/watch?v=pNwatyeXplY)| Windows Wednesday（35:48）
+1. [WSL 与 Linux 发行版 – Hayden Barnes 和 Kayla Cinnamon](https://www.youtube.com/watch?v=kCB3gO32SPs) | Windows Wednesday（37:00）
+1. [使用 Oh My Posh 和 WSL Linux 发行版自定义终端](https://www.youtube.com/watch?v=uO_F5W2LbSk) | Windows Wednesday（33:14）
+1. [Web 开发者 Sarah Tamsin 和 Craig Loewen 谈论 Web 开发、内容创建和 WSL](https://www.youtube.com/watch?v=ySS8Re6LDTQ) | Dev Perspectives（12:22）
+1. [WSL 如何从 Windows 访问 Linux 文件](https://www.youtube.com/watch?v=63wVlI9B3Ac&t=45s) | Deep dive（24:59）
+1. [适用于 Linux 的 Windows 子系统体系结构：深入了解](https://www.youtube.com/watch?v=lwhMThePdIo) | Build 2019（58:10）

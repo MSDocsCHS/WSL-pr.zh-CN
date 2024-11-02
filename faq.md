@@ -1,12 +1,12 @@
-### YamlMime:FAQ
-metadata:
-  title: FAQ's about Windows Subsystem for Linux
-  description: "Find answers to frequently asked questions (FAQs) about the Windows Subsystem for Linux, such as 'What can I do with WSL?'."
-  ms.date: 07/16/2024
-  ms.topic: faq
-  ms.localizationpriority: high
-title: Frequently Asked Questions about Windows Subsystem for Linux
-summary: |
+---
+title: 有关适用于 Linux 的 Windows 子系统的常见问题
+description: "找到有关适用于 Linux 的 Windows 子系统的常见问题的答案，比方说，“我能用 WSL 来做什么？”。"
+ms.date: 07/16/2024
+ms.topic: faq
+ms.localizationpriority: high
+---
+
+# 有关适用于 Linux 的 Windows 子系统的常见问题
 
 sections:
   - name: General

@@ -1080,11 +1080,11 @@ For general Windows information on build 16251 visit the [Windows Blog](https://
 - No Console related changes in this release.
 
 ### LTP Results:
-Number of Passing Tests: 768</br>
-Number of Failing Tests: 244</br>
-Number of Skipped Tests: 96</br>
+Number of Passing Tests: 768<br />
+Number of Failing Tests: 244<br />
+Number of Skipped Tests: 96<br />
 
-</br>
+<br />
 
 ## Build 16241
 
@@ -1109,7 +1109,7 @@ For general Windows information on build 16241 visit the [Windows Blog](https://
 - Japanese characters look strange with Unicode Character U+30FB [GH 2146]
 - Additional improvements and bug fixes
 
-</br>
+<br />
 
 ## Build 16237
 
@@ -1129,7 +1129,7 @@ For general Windows information on build 16237 visit the [Windows Blog](https://
 - Fix incorrect block count in "stat" for DrvFs (and LxFs) [GH 1894]
 - Additional improvements and bug fixes
 
-</br>
+<br />
 
 ## Build 16232
 
@@ -1139,7 +1139,7 @@ For general Windows information on build 16232 visit the [Windows Blog](https://
 ### Fixed
 - No WSL related changes in this release.
 
-</br>
+<br />
 
 ## Build 16226
 
@@ -1153,7 +1153,7 @@ For general Windows information on build 16226 visit the [Windows Blog](https://
 - Improved support for OneDrive placeholders, GVFS placeholders, and Compact OS compressed files.
 - Additional improvements and bug fixes
 
-</br>
+<br />
 
 ## Build 16215
 
@@ -1170,7 +1170,7 @@ For general Windows information on build 16215 visit the [Windows Blog](https://
 - Infer protocol family for routes to AF_INADDR.
 - Serial device improvements [GH 1929].
 
-</br>
+<br />
 
 ## Build 16199
 
@@ -1180,7 +1180,7 @@ For general Windows information on build 16199 visit the [Windows Blog](https://
 ### Fixed
 - No WSL related changes in these releases.
 
-</br>
+<br />
 
 ## Build 16193
 
@@ -1194,7 +1194,7 @@ For general Windows information on build 16193 visit the [Windows Blog](https://
 - Moved DrvFs mounting to init daemon [GH 1862, 1968, 1767, 1933]
 - Added support in DrvFs for following NT symlinks.
 
-</br>
+<br />
 
 ## Build 16184
 
@@ -1209,7 +1209,7 @@ For general Windows information on build 16184 visit the [Windows Blog](https://
 - Fixed issue where deleting DrvFs files with open handles will cause the file to exhibit undefined behavior [GH 544,966,1357,1535,1615]
 - /etc/hosts will now inherit entries from the Windows hosts file (%windir%\system32\drivers\etc\hosts) [GH 1495]
 
-</br>
+<br />
 
 ## Build 16179
 
@@ -1219,7 +1219,7 @@ For general Windows information on build 16179 visit the [Windows Blog](https://
 ### Fixed
 - No WSL changes this week.
 
-</br>
+<br />
 
 ## Build 16176
 
@@ -1246,7 +1246,7 @@ For general Windows information on build 16176 visit the [Windows Blog](https://
 ### LTP Results
 No changes since 15042
 
-</br>
+<br />
 
 ## Build 16170
 
@@ -1263,7 +1263,7 @@ We released a new [blog post](/archive/blogs/wsl/testing-the-windows-subsystem-f
 ### LTP Results
 No changes since 15042
 
-</br>
+<br />
 
 ## Build 15046 to Windows 10 Creators Update
 There are no more WSL fixes or features planned for inclusion in the Creators Update to Windows 10. Release notes for WSL will resume in the coming weeks for additions targeting the next major Windows Update. For general Windows information on build 15046 and future Insider releases visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/28/announcing-windows-10-insider-preview-build-15046-pc/). <br/><br/>
@@ -1284,10 +1284,10 @@ For general Windows information on build 15042 visit the [Windows Blog](https://
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 737</br>
+Number of Passing Test: 737<br />
 Number of non-Passing (failing, skipped, etc…): 255
 
-</br>
+<br />
 
 ## Build 15031
 
@@ -1306,8 +1306,8 @@ For general Windows information on build 15031 visit the [Windows Blog](https://
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 737</br>
-Number of non-Passing (failing, skipped, etc…): 255 </br>
+Number of Passing Test: 737<br />
+Number of non-Passing (failing, skipped, etc…): 255 <br />
 
 <br/>
 
@@ -1335,8 +1335,8 @@ For general Windows information on build 15025 visit the [Windows Blog](https://
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 732</br>
-Number of non-Passing (failing, skipped, etc…): 255 </br>
+Number of Passing Test: 732<br />
+Number of non-Passing (failing, skipped, etc…): 255 <br />
 
 <br/>
 
@@ -1356,8 +1356,8 @@ For general Windows information on build 15019 visit the [Windows Blog](https://
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 714 </br>
-Number of non-Passing (failing, skipped, etc…): 249 </br>
+Number of Passing Test: 714 <br />
+Number of non-Passing (failing, skipped, etc…): 249 <br />
 
 
 <br/>
@@ -1380,14 +1380,14 @@ For general Windows information on build 15014 visit the [Windows Blog](https://
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 709 </br>
-Number of non-Passing (failing, skipped, etc…): 255 </br>
+Number of Passing Test: 709 <br />
+Number of non-Passing (failing, skipped, etc…): 255 <br />
 
 ### Syscall Summary
-Total Syscalls: 384 </br>
-Total Implemented: 235 </br>
-Total Stubbed: 22 </br>
-Total Unimplemented: 127 </br>
+Total Syscalls: 384 <br />
+Total Implemented: 235 <br />
+Total Stubbed: 22 <br />
+Total Unimplemented: 127 <br />
 
 
 <br/>
@@ -1412,8 +1412,8 @@ For general Windows information on build 15007 visit the [Windows Blog]( https:/
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 709 </br>
-Number of non-Passing (failing, skipped, etc…): 255 </br>
+Number of Passing Test: 709 <br />
+Number of non-Passing (failing, skipped, etc…): 255 <br />
 
 <br/>
 
@@ -1470,8 +1470,8 @@ Two known issues:
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 690 </br>
-Number of non-Passing (failing, skipped, etc…): 274 </br>
+Number of Passing Test: 690 <br />
+Number of non-Passing (failing, skipped, etc…): 274 <br />
 
 <br/>
 
@@ -1504,8 +1504,8 @@ For general Windows information on build 14986 visit the [Windows Blog](https://
 - Additional fixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 669 </br>
-Number of non-Passing (failing, skipped, etc…): 258 </br>
+Number of Passing Test: 669 <br />
+Number of non-Passing (failing, skipped, etc…): 258 <br />
 
 <br/>
 
@@ -1528,9 +1528,9 @@ For general Windows information on build 14971 visit the [Windows Blog](https://
  - Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.  Regularly scheduled updates will resume on the next release.
 
 ### LTP Results:
-Unchanged from 14965 </br>
-Number of Passing Test: 664 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Unchanged from 14965 <br />
+Number of Passing Test: 664 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 <br/>
 
@@ -1565,8 +1565,8 @@ For general Windows information on build 14965 visit the [Windows Blog](https://
 - Additional bugfixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 664 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Number of Passing Test: 664 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 <br/>
 
@@ -1583,8 +1583,8 @@ For general Windows information on build 14959 visit the [Windows Blog](https://
 - Additional bugfixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 665 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Number of Passing Test: 665 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 <br/>
 
@@ -1598,8 +1598,8 @@ For general Windows information on build 14955 visit the [Windows Blog](https://
  - Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.  Regularly scheduled updates will resume on the next release.
 
 ### LTP Results:
-Number of Passing Test: 665 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Number of Passing Test: 665 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 <br/>
 
@@ -1634,8 +1634,8 @@ More information can be found at:
 - Additional bugfixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 665 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Number of Passing Test: 665 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 <br/>
 
@@ -1658,8 +1658,8 @@ For general Windows information on build 14946 visit the [Windows Blog](https://
 - Additional bugfixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 665 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Number of Passing Test: 665 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 <br/>
 
@@ -1679,8 +1679,8 @@ For general Windows information on build 14942 visit the [Windows Blog](https://
 
 
 ### LTP Results:
-Number of Passing Test: 665 </br>
-Number of non-Passing (failing, skipped, etc…): 263 </br>
+Number of Passing Test: 665 <br />
+Number of non-Passing (failing, skipped, etc…): 263 <br />
 
 ### Syscall Support
 Below are a list of new or enhanced syscalls that have some implementation in WSL. The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.
@@ -1714,8 +1714,8 @@ WSL is experiencing an issue with some socket implementations.  The bugcheck man
 - Additional bugfixes and improvements
 
 ### LTP Results:
-Number of Passing Test: 664 </br>
-Number of non-Passing (failing, skipped, etc…): 264 </br>
+Number of Passing Test: 664 <br />
+Number of non-Passing (failing, skipped, etc…): 264 <br />
 
 ### Syscall Support
 Below are a list of new or enhanced syscalls that have some implementation in WSL. The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.
@@ -1753,8 +1753,8 @@ For general Windows information on build 14926 visit the [Windows Blog](https://
 - Unix socket now supports SCM_CREDENTIALS
 
 ### LTP Results:
-Number of Passing Test: 651 </br>
-Number of non-Passing (failing, skipped, etc…): 258 </br>
+Number of Passing Test: 651 <br />
+Number of non-Passing (failing, skipped, etc…): 258 <br />
 
 <br/>
 
@@ -1794,7 +1794,7 @@ For general Windows information on build 14905 visit the [Windows Blog](https://
 - Implemented the /proc/[pid]/mounts, /proc/[pid]/mountinfo and /proc/[pid]/mountstats files
 - Additional bugfixes and improvements
 
-</br>
+<br />
 
 ## Build 14901
 First Insider build for the post Windows 10 Anniversary Update release.

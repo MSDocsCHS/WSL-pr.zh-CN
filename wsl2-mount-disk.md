@@ -167,7 +167,7 @@ wsl --mount <Diskpath> -t vfat
 ```
 
 > [!NOTE]
-> To list the available filesystems in WSL2, run: `cat /proc/filesystems` <br>
+> To list the available filesystems in WSL2, run: `cat /proc/filesystems` <br />
 > When a disk has been mounted via WSL2 (Linux file system), it is no longer available to mount via an ext4 driver on the Windows file system.
 
 ### Mounting a specific partition

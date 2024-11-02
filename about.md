@@ -26,7 +26,7 @@ Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run
 > [!div class="nextstepaction"]
 > [Install WSL](install.md)
 
-<br>
+<br />
 
 > [!VIDEO https://www.youtube.com/embed/48k317kOxqg]
 

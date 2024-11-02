@@ -64,7 +64,7 @@ For general Windows information on build 20190 visit the [Windows blog](https://
 
 - Fix bug preventing WSL1 instances from launching. [GH 5633]
 - Fix hang when redirecting Windows process output. [GH 5648]
-- Add %userprofile%\\.wslconfig option to control the VM idle timeout (wsl2.vmIdleTimeout=<time_in_ms>).
+- Add %userprofile%\\.wslconfig option to control the VM idle timeout (wsl2.vmIdleTimeout=\<time_in_ms>).
 - Support launching app execution aliases from WSL.
 - Added support for installing the WSL2 kernel and distributions to wsl.exe --install.
 

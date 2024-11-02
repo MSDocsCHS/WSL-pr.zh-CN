@@ -748,7 +748,7 @@ Testing in progress.
 For general Windows information on build 17074 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/01/11/announcing-windows-10-insider-preview-build-17074-pc/).
 
 ### WSL
-* Fixed storage format of DrvFs metadata [GH 2777] </br>
+* Fixed storage format of DrvFs metadata [GH 2777] <br />
 **Important:** DrvFs metadata created before this build will show up incorrectly or not at all. To fix affected files, use chmod and chown to re-apply the metadata.
 * Fixed issue with multiple signals and restartable syscalls.
 

@@ -848,7 +848,7 @@ For general Windows information on build 17046 visit the [Windows Blog](https://
     - In all other situations, DrvFs still creates WSL symlinks.
 - Allow running elevated and non-elevated WSL instances simultaneously.
 - Support /proc/sys/kernel/yama/ptrace_scope
-- Add wslpath to do WSL<->Windows path conversions. [GH 522, 1243, 1834, 2327, et al.]
+- Add wslpath to do WSL\<->Windows path conversions. [GH 522, 1243, 1834, 2327, et al.]
   ```
     wslpath usage:
       -a    force result to absolute path format

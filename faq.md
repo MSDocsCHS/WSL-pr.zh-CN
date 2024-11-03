@@ -8,6 +8,10 @@ ms.localizationpriority: high
 
 # 有关适用于 Linux 的 Windows 子系统的常见问题
 
+## 普适性问腿
+
+### 适用于 Linux 的 Windows 子系统（WSL）是什么？
+
 sections:
   - name: General
     questions:

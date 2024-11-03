@@ -1,5 +1,5 @@
 ---
-title: Set up a WSL development environment
+title: 设置 WSL 开发环境
 description: Set up a WSL development environment using best practices from this set-by-step guide. Learn how to run Ubuntu, Visual Studio Code or Visual Studio, Git, Windows Credential Manager, MongoDB, MySQL, Docker remote containers and more.
 ms.date: 11/20/2023
 ms.topic: article
@@ -7,7 +7,7 @@ no-loc: [Terminal]
 ms.custom: seo-windows-dev
 ---
 
-# Set up a WSL development environment
+# 设置 WSL 开发环境
 
 A step-by-step guide to the best practices for setting up a WSL development environment. Learn how to run the command to install the default Bash shell that uses Ubuntu or can be set to install other Linux distributions, use basic WSL commands, set up Visual Studio Code or Visual Studio, Git, Windows Credential Manager, databases like MongoDB, Postgres, or MySQL, set up GPU acceleration, run GUI apps, and more.
 

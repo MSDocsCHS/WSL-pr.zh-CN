@@ -1,11 +1,11 @@
 ---
-title: Get started with Linux using WSL
+title: 使用 WSL 入门 Linux
 description: Learn some basics for working with Linux and a Bash command line using WSL.
 ms.date: 08/05/2022
 ms.topic: article
 ---
 
-# Getting started with Linux and Bash
+# 入门 Linux 和 Bash
 
 This tutorial will help those new to Linux to get started installing and updating packages using the Ubuntu distribution of Linux that is installed by default using WSL, as well as using some basic commands with the Bash command line.
 

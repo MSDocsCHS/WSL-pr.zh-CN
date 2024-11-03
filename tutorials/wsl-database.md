@@ -1,11 +1,11 @@
 ---
-title: Add or connect a database with WSL
+title: 在 WSL 上添加或连接数据库
 description: Learn how to set up MySQL MongoDB, PostgreSQL, SQLite, Microsoft SQL Server, or Redis on the Windows Subsystem for Linux.
 ms.date: 09/18/2023
 ms.topic: article
 ---
 
-# Get started with databases on Windows Subsystem for Linux
+# 入门适用于 Linux 的 Windows 子系统上的数据库
 
 This step-by-step guide will help you get started connecting your project in WSL to a database. Get started with MySQL, PostgreSQL, MongoDB, Redis, Microsoft SQL Server, or SQLite.
 

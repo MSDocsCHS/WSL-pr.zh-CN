@@ -1,11 +1,11 @@
 ---
-title: Run Linux GUI apps with WSL 
+title: 使用 WSL 运行 Linux 中的图形化应用程序 Run Linux GUI apps with WSL 
 description: Learn how WSL support running Linux GUI apps. 
 ms.date: 01/04/2024
 ms.topic: article
 ---
 
-# Run Linux GUI apps on the Windows Subsystem for Linux
+# 在适用于 Linux 的 Windows 子系统上运行 Linux 图形化应用程序
 
 Windows Subsystem for Linux (WSL) now supports running Linux GUI applications (X11 and Wayland) on Windows in a fully integrated desktop experience.
 

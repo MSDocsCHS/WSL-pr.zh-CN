@@ -1,11 +1,11 @@
 ---
-title: Get started using Git on WSL
+title: 入门 WSL 上的 Git
 description: Learn how to set up Git for version control on the Windows Subsystem for Linux, along with Git Credential Manager.
 ms.date: 06/21/2023
 ms.topic: article
 ---
 
-# Get started using Git on Windows Subsystem for Linux
+# 在适用于 Linux 的 Windows 子系统上入门使用 Git
 
 Git is the most commonly used version control system. With Git, you can track changes you make to files, so you have a record of what has been done, and have the ability to revert to earlier versions of the files if needed. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.
 

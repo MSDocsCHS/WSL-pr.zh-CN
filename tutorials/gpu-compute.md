@@ -1,11 +1,11 @@
 ---
-title: GPU accelerated ML training in WSL
+title: WSL 中由 GPU 加速的机器学习
 description: Learn how to setup the Windows Subsystem for Linux with NVIDIA CUDA, TensorFlow-DirectML, and PyTorch-DirectML. Read about using GPU acceleration with WSL to support machine learning training scenarios.
 ms.date: 05/03/2022
 ms.topic: article
 ---
 
-# Get started with GPU acceleration for ML in WSL
+# 入门 WSL 中由 GPU 加速的机器学习
 
 Machine learning (ML) is becoming a key part of many development workflows. Whether you're a data scientist, ML engineer, or starting your learning journey with ML the Windows Subsystem for Linux (WSL) offers a great environment to run the most common and popular GPU accelerated ML tools.
 

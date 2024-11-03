@@ -1,12 +1,12 @@
 ---
-title: Accessing network applications with WSL
+title: 在 WSL 访问网络应用
 description: Learn about the considerations for accessing network applications when using Windows Subsystem for Linux (WSL).
 keywords: [wsl, Linux, Windows, networking, ip address, ip addr, host IP, server, network, localhost, local area network, lan, ipv6, remote]
 ms.date: 07/16/2024
 ms.topic: article
 ---
 
-# Accessing network applications with WSL
+# 在 WSL 访问网络应用
 
 There are a few considerations to be aware of when working with networking apps and WSL. By default WSL uses a [NAT based architecture](#default-networking-mode-nat), and we recommend trying the new [Mirrored networking mode](#mirrored-mode-networking) to get the latest features and improvements.
 

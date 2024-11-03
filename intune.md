@@ -1,11 +1,11 @@
 ---
-title: Intune settings
+title: Intune 设置
 description: Available settings in Intune for the Windows Subsystem for Linux (WSL)
 ms.date: 01/10/2024
 ms.topic: article
 ---
 
-# Intune settings for WSL
+# 适用于 WSL 的 Intune 设置
 
 You can now use management tools like Intune to manage WSL as a Windows component. 
 

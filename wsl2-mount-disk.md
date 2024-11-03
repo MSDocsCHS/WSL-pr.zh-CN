@@ -1,11 +1,11 @@
 ---
-title: Get started mounting a Linux disk in WSL 2 
+title: 了解在 WSL 2 中为 Linux 挂载磁盘
 description: Learn how to set up a disk mount in WSL 2 and how to access it.
 ms.date: 07/17/2023
 ms.topic: article
 ---
 
-# Mount a Linux disk in WSL 2
+# 在 WSL 中为 Linux 挂载磁盘
 
 If you want to access a Linux disk format that isn't supported by Windows, you can use WSL 2 to mount your disk and access its content. This tutorial will cover the steps to identify the disk and partition to attach to WSL2, how to mount them, and how to access them.
 

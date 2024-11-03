@@ -1,5 +1,5 @@
 ---
-title: Manual installation steps for older versions of WSL
+title: 适用于 WSL 早期版本的手动安装步骤
 description: Step by step instructions to manually install WSL on older versions of Windows, rather than using the wsl install command.
 keywords: [wsl, install, BashOnWindows, bash, windows subsystem for linux, install ubuntu on windows, enable WSL2, linux on windows]
 ms.date: 11/20/2023
@@ -7,7 +7,7 @@ ms.topic: article
 adobe-target: true
 ---
 
-# Manual installation steps for older versions of WSL
+# 适用于 WSL 早期版本的手动安装步骤
 
 For simplicity, we generally recommend using the [`wsl --install`](./install.md) to install Windows Subsystem for Linux, but if you're running an older build of Windows, that may not be supported. We have included the manual installation steps below. If you run into an issue during the install process, check the [installation section of the troubleshooting guide](./troubleshooting.md#installation-issues).
 

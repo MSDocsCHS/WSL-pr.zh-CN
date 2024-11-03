@@ -1,11 +1,11 @@
 ---
-title: Set up Windows Subsystem for Linux for your company
+title: 为你的公司设置适用于 Linux 的 Windows 子系统
 description: Resources and instructions on how to best use the Windows Subsystem for Linux in an Enterprise environment.
 ms.date: 08/16/2024
 ms.topic: article
 ---
 
-# Enterprise environment: Set up Windows Subsystem for Linux for your company
+# 商业环境：为你的公司设置适用于 Linux 的 Windows 子系统
 
 This guidance is intended for IT Administrators or Security Analysts responsible for setting up enterprise work environments with the goal of distributing software across multiple machines and maintaining a consistent level of security settings across those work machines. 
 

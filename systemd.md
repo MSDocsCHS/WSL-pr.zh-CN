@@ -1,5 +1,5 @@
 ---
-title: Use systemd to manage Linux services with WSL
+title: 在 WSL 中使用 systemd 管理 Linux 服务
 description: Learn how to use systemd to manage Linux services with Windows Subsystem for Linux.
 ms.date: 07/17/2024
 ms.topic: article

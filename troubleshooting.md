@@ -1,11 +1,11 @@
 ---
-title: Troubleshooting Windows Subsystem for Linux
+title: 适用于 Linux 的 Windows 子系统疑难解答
 description: Provides detailed information about common errors and issues people run into while running Linux on the Windows Subsystem for Linux. 
 ms.date: 08/08/2024
 ms.topic: article
 ---
 
-# Troubleshooting Windows Subsystem for Linux
+# 适用于 Linux 的 Windows 子系统疑难解答
 
 We have covered some common troubleshooting scenarios associated with WSL below, but please consider searching the issues filed in the [WSL product repo on GitHub](https://github.com/Microsoft/wsl/issues) as well.
 

@@ -1,12 +1,12 @@
 ---
-title: Import any Linux distribution to use with WSL
+title: 导入供 WSL 使用的任何 Linux 发行版
 description: Learn how to import any Linux distribution to use with the Windows Subsystem for Linux.
 keywords: [BashOnWindows, bash, wsl, windows, windows subsystem, distro, custom]
 ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# Import any Linux distribution to use with WSL
+# 导入供 WSL 使用的任何 Linux 发行版
 
 You can use any Linux distribution inside of the Windows Subsystem for Linux (WSL), even if it is not available in the [Microsoft Store](https://www.microsoft.com/en-us/search/shop/apps?q=linux), by importing it with a tar file. 
 

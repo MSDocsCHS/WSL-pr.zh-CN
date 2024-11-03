@@ -1,12 +1,12 @@
 ---
-title: Release Notes for WSL kernel 
+title: WSL 内核发行说明 
 description: Release notes for the Windows Subsystem for Linux.  Updated monthly.
 keywords: [release notes, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, kernel]
 ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# Release Notes for Windows Subsystem for Linux kernel
+# 适用于 Linux 的 Windows 子系统 内核发行说明
 
 We've added support for WSL 2 distributions, [which use a full Linux kernel](https://devblogs.microsoft.com/commandline/shipping-a-linux-kernel-with-windows/). This Linux kernel is open source, with its source code available at the [WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel) repository. This Linux kernel is delivered to your machine via Microsoft Update, and follows a separate release schedule to the Windows Subsystem for Linux which is delivered as part of the Windows image.
 

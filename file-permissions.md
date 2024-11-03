@@ -1,12 +1,12 @@
 ---
-title: File Permissions for WSL
+title: WSL 中的文件权限
 description: Understanding how WSL determines file permissions in Windows
 keywords: [File permissions, bash, wsl, wsl2, windows, windows subsystem for linux, windows subsystem, ubuntu, debian, suse, windows 10]
 ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# File Permissions for WSL
+# WSL 中的文件权限
 
 This page details how Linux file permissions are interpreted across the Windows Subsystem for Linux, especially when accessing resources inside of Windows on the NT file system. This documentation assumes a basic understanding of the [Linux file system permissions structure](https://wiki.archlinux.org/title/File_permissions_and_attributes) and the [umask command](https://en.wikipedia.org/wiki/Umask).
 

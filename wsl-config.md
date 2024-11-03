@@ -1,5 +1,5 @@
 ---
-title: Advanced settings configuration in WSL
+title: WSL 中的进阶配置
 description: A guide to the wsl.conf and .wslconfig files used for configuring settings when running multiple Linux distributions on Windows Subsystem for Linux.
 ms.date: 09/25/2024
 ms.topic: article
@@ -7,7 +7,7 @@ ms.custom: seo-windows-dev
 adobe-target: true
 ---
 
-# Advanced settings configuration in WSL
+# WSL 中的进阶配置
 
 The [wsl.conf](#wslconf) and [.wslconfig](#wslconfig) files are used to configure advanced settings options, on a per-distribution basis (`wsl.conf`) and globally across all WSL 2 distributions (`.wslconfig`). This guide will cover each of the settings options, when to use each file type, where to store the file, sample settings files and tips.
 

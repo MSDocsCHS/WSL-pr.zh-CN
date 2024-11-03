@@ -1,5 +1,5 @@
 ---
-title: Release Notes for WSL 
+title: WSL 发行说明
 description: Read release notes for the Windows Subsystem for Linux. These release notes include fixed issues and are updated weekly.
 keywords: [release notes, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu]
 author: benhillis
@@ -7,7 +7,7 @@ ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# Release Notes for Windows Subsystem for Linux
+# 适用于 Linux 的 Windows 子系统 发行说明
 
 ## Build 21364
 

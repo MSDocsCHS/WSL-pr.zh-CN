@@ -1,11 +1,11 @@
 ---
-title: What is Windows Subsystem for Linux 
+title: 什么是适用于 Linux 的 Windows 子系统
 description: Learn about the Windows Subsystem for Linux, including the different versions and ways you can use them. Microsoft Loves Linux.
 ms.date: 11/20/2023
 ms.topic: article
 ---
 
-# What is the Windows Subsystem for Linux?
+# 什么是适用于 Linux 的 Windows 子系统？
 
 Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.  WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
 

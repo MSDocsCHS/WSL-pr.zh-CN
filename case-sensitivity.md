@@ -1,12 +1,12 @@
 ---
-title: Case Sensitivity
+title: 大小写敏感
 description: Learn how case sensitive file names are handled between Windows and Linux file systems, how to adjust these settings by directory with WSL, and how to troubleshoot issues.
 keywords: [case sensitivity, wsl, windows, linux, ntfs, mount]
 ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# Adjust case sensitivity
+# 调整大小写敏感
 
 Case sensitivity determines whether uppercase (FOO.txt) and lowercase (foo.txt) letters are handled as distinct (case-sensitive) or equivalent (case-insensitive) in a file name or directory.
 

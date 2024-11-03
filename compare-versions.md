@@ -1,12 +1,12 @@
 ---
-title: Comparing WSL Versions
+title: 对比 WSL 版本
 description: WSL 2 provides the benefits of WSL 1, but uses an actual Linux kernel, rather than a translation layer like WSL 1, resulting in faster performance.
 ms.date: 11/20/2023
 ms.topic: conceptual
 ms.custom: seo-windows-dev
 ---
 
-# Comparing WSL Versions
+# 对比 WSL 版本
 
 Learn more about different WSL versions, including why WSL 2 is now the default and the specific scenarios or exceptions that may warrant switching your installed Linux distribution to the earlier WSL 1 architecture. 
 

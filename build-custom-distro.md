@@ -1,12 +1,12 @@
 ---
-title: Build a Custom Linux Distro for WSL
+title: 为 WSL 构建自定义 Linux 发行版
 description: Learn how to create a custom Linux distribution for Windows Subsystem for Linux.
 keywords: [BashOnWindows, bash, wsl, windows, windows subsystem, distro, custom]
 ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# Creating a Custom Linux Distribution for WSL
+# 为 WSL 创建自定义 Linux 发行版
 
 Use our open source WSL sample to build WSL distro packages for the Microsoft Store and/or to create custom Linux distro packages for sideloading. You can find the [distro launcher repo](https://github.com/Microsoft/WSL-DistroLauncher) on GitHub.
 

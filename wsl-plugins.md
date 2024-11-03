@@ -1,11 +1,11 @@
 ---
-title: WSL Plugins
+title: WSL 插件
 description: Learn how Windows applications can use WSL plugins to integrate their workflow inside of WSL
 ms.date: 10/14/2023
 ms.topic: article
 ---
 
-# WSL Plugins
+# WSL 插件
 
 Windows applications can now create and interact with Linux processes running inside of the Windows Subsystem for Linux (WSL) with WSL plugins. This article gives an overview of how they work, and how to get started using them. 
 

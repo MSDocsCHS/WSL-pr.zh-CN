@@ -1,12 +1,12 @@
 ---
-title: Get started using VS Code with WSL
+title: 了解在 WSL 使用 VS Code Get started using VS Code with WSL
 description: Learn how to set up VS Code to author and debug code using the Windows Subsystem for Linux.
 keywords: [wsl, windows, windowssubsystem, gnu, linux, bash, vs code, remote extension, debug, path, visual studio]
 ms.date: 09/27/2021
 ms.topic: article
 ---
 
-# Get started using Visual Studio Code with Windows Subsystem for Linux
+# 了解与适用于 Linux 的 Windows 子系统搭配使用 Visual Studio Code
 
 Visual Studio Code, along with the WSL extension, enables you to use WSL as your full-time development environment directly from VS Code. You can:
 

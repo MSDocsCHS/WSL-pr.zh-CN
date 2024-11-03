@@ -8,100 +8,84 @@ ms.localizationpriority: high
 
 # 有关适用于 Linux 的 Windows 子系统的常见问题
 
-## 普适性问腿
+## 普适性问题
 
 ### 适用于 Linux 的 Windows 子系统（WSL）是什么？
 
-sections:
-  - name: General
-    questions:
-      - question: |
-         What is Windows Subsystem for Linux (WSL)?
-        answer: |
-          The Windows Subsystem for Linux (WSL) is a feature of the Windows operating system that enables you to run a Linux file system, along with Linux command-line tools and GUI apps, directly on Windows, alongside your traditional Windows desktop and apps.
-          
-          See the [about page](./about.md) for more details.
-          
-      - question: |
-         Who is WSL for?
-        answer: |
-         This is primarily a tool for developers, especially web developers, those working on open source projects, or deploying to Linux server environments. WSL is for anyone who likes using Bash, common Linux tools (`sed`, `awk`, etc.) and Linux-first frameworks (Ruby, Python, etc.) but also enjoys using Windows productivity tools.
+适用于 Linux 的 Windows 子系统是 Windows 操作系统的一项功能，它使您能够在 Windows 上直接运行 Linux 文件系统，以及 Linux 命令行工具和图形化应用程序，并与你传统的 Windows 桌面和应用程序一起使用。
 
-      - question: |
-         What can I do with WSL?
-        answer: |
-          WSL enables you to run Linux in a Bash shell with your choice of distribution (Ubuntu, Debian, OpenSUSE, Kali, Alpine, etc). Using Bash, you can run command-line Linux tools and apps. For example, type `lsb_release -a` and hit enter; you’ll see details of the Linux distro currently running:
-          
-          ![Screenshot of distro details](media/distro.png)
-          
-          You can also access your local machine’s file system from within the Linux Bash shell – you’ll find your local drives mounted under the `/mnt` folder. For example, your `C:` drive is mounted under `/mnt/c`:  
-          
-          ![Screenshot of mounted C drive](media/ls.png)
-          
-      - question: |
-         Could you describe a typical development workflow that incorporates WSL?
-        answer: |
-         WSL targets a developer audience with the intent to be used as part of an inner development loop. Let's say that Sam is creating a CI/CD pipeline (Continuous Integration & Continuous Delivery) and wants to test it first on a local machine (laptop) before deploying it to the cloud. Sam can enable WSL (& WSL 2 to improve speed and performance), and then use a genuine Linux Ubuntu instance locally (on the laptop) with whatever Bash commands and tools they prefer. Once the development pipeline is verified locally, Sam can then push that CI/CD pipeline up to the cloud (i.e. Azure) by making it into a Docker container and pushing the container to a cloud instance where it runs on a production-ready Ubuntu VM.
+如需更多详细信息，请参阅 [关于页面](./about.md)。
 
-      - question: |
-         What is Bash?
-        answer: |
-          [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) is a popular text-based shell and command-language. It is the default shell included within Ubuntu and other Linux distros. Users type commands into a shell to execute scripts and/or run commands and tools to accomplish many tasks.
-          
-      - question: |
-         How does this work?
-        answer: |
-          Check out this article on the Windows Command Line blog: [A Deep Dive Into How WSL Allows Windows to Access Linux Files](https://devblogs.microsoft.com/commandline/a-deep-dive-into-how-wsl-allows-windows-to-access-linux-files/) which goes into detail about the underlying technology.
-          
-      - question: |
-         Why would I use WSL rather than Linux in a VM?
-        answer: |
-         WSL requires fewer resources (CPU, memory, and storage) than a full virtual machine. WSL also allows you to run Linux command-line tools and apps alongside your Windows command-line, desktop and store apps, and to access your Windows files from within Linux. This enables you to use Windows apps and Linux command-line tools on the same set of files if you wish.
+### 适用于 Linux 的 Windows 子系统适用于哪些人？
 
-      - question: |
-         Why would I use, for example, Ruby on Linux instead of on Windows?
-        answer: |
-          Some cross-platform tools were built assuming that the environment in which they run behaves like Linux. For example, some tools assume that they are able to access very long file paths or that specific files/folders exist. This often causes problems on Windows which often behaves differently from Linux.
-          
-          Many languages like Ruby and Node.js are often ported to, and run great, on Windows. However, not all of the Ruby Gem or node/NPM library owners port their libraries to support Windows, and many have Linux-specific dependencies. This can often result in systems built using such tools and libraries suffering from build and sometimes runtime errors or unwanted behaviors on Windows.
-          
-          These are just some of issues that caused many people to ask Microsoft to improve Windows’ command-line tools and what drove us to partner with Canonical to enable native Bash and Linux command-line tools to run on Windows.
-          
-      - question: |
-         What does this mean for PowerShell?
-        answer: |
-          While working with OSS projects, there are numerous scenarios where it’s immensely useful to drop into Bash from a PowerShell prompt. Bash support is complementary and strengthens the value of the command-line on Windows, allowing PowerShell and the PowerShell community to leverage other popular technologies.
-          
-          Read more on the PowerShell team blog -- [Bash for Windows: Why it’s awesome and what it means for PowerShell](https://devblogs.microsoft.com/powershell/bash-for-windows-why-its-awesome-and-what-it-means-for-powershell/)
-          
-      - question: |
-         What processors does WSL support?
-        answer: WSL supports x64 and Arm CPUs.
+适用于 Linux 的 Windows 子系统主要是为开发人员设计的，特别是 Web 开发人员、在开源项目上工作的人员，或者部署到 Linux 服务器环境的人员。WSL 适用于喜欢使用 Bash、常见的 Linux 工具（`sed`、`awk` 等）和 Linux 优先框架（Ruby、Python 等），但同时也喜欢使用 Windows 生产力工具的任何人。
 
-      - question: |
-          How do I access my C: drive?
-        answer: |
-          Mount points for hard drives on the local machine are automatically created and provide easy access to the Windows file system.
-          
-          **/mnt/\<drive letter>/**
-          
-          Example usage would be `cd /mnt/c` to access c:\
-          
-      - question: |
-         How do I set up Git Credential Manager? (How do I use my Windows Git permissions in WSL?) 
-        answer: 
-         See the tutorial [Get started using Git on Windows Subsystem for Linux](./tutorials/wsl-git.md), which features a section on setting up Git Credential Manager and storing authentication tokens in Windows Credential Manager.
+### 我可以在 WSL 做些什么？
 
-      - question: |
-         How do I use a Windows file with a Linux app?
-        answer: |
-          One of the benefits of WSL is being able to access your files via both Windows and Linux apps or tools. 
+WSL 使你能够在 Bash shell 中运行你选择的 Linux 发行版（Ubuntu、Debian、OpenSUSE、Kali、Alpine 等）。通过1使用 Bash，你可以运行 Linux 的命令行工具和应用程序。例如，键入 `lsb_release -a` 并按 Enter 键；你将看到当前运行的 Linux 发行版的详细信息：
+
+![发行版详细信息截图](media/distro.png)
+
+你还可以从 Linux Bash shell 内访问本地计算机的文件系统——你会发现本地驱动器挂载在 `/mnt` 文件夹下。例如，你的 `C:` 驱动器挂载在 `/mnt/c` 下：
+
+![挂载的 C 驱动器截图](media/ls.png)
+
+### 你可以描述一下包含 WSL 的典型开发工作流程吗？
+
+WSL 以开发人员为目标受众，旨在用作内部开发循环的一部分。比方说，Sam 正在创建一个 CI/CD 管道（持续集成和持续交付），他希望先在本地机器（笔记本电脑）上进行测试，然后再部署到云上。Sam 可以启用 WSL（以及 WSL 2，以提高速度和性能），然后在本地（笔记本电脑上）使用真正的 Linux Ubuntu 实例，并使用他喜欢的任何 Bash 命令和工具。一旦开发管道在本地得到验证，Sam 就可以将该 CI/CD 管道推送到云端（如 Azure），方法是将其制作成一个 Docker 容器，并将该容器推送到一个云实例上，在该实例上运行的是一个可用于生产的 Ubuntu 虚拟机。
+
+### Bash 是什么？
+
+[Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) 是一种流行的基于文本的 shell 和命令语言。它是 Ubuntu 和其他 Linux 发行版中默认的 shell。用户在 shell 中键入命令以执行脚本和/或运行命令和工具，以完成许多任务。
+
+### WSL 是如何工作的？ 
+
+
+查看 Windows Command Line 博客上的这篇详细介绍了底层技术的文章： [深入了解 WSL 如何允许 Windows 访问 Linux 文件](https://devblogs.microsoft.com/commandline/a-deep-dive-into-how-wsl-allows-windows-to-access-linux-files/)。
+
+### WSL 与 Linux 虚拟机相比有什么优势？
+
+与完整的虚拟机相比，WSL 需要的资源（CPU、内存和存储空间）更少。WSL 还允许你在运行 Windows 命令行、桌面和存储应用程序的同时运行 Linux 命令行工具和应用程序，并从 Linux 中访问 Windows 文件。这样，您就可以根据需要在同一组文件上使用 Windows 应用程序和 Linux 命令行工具。
+
+### 为什么我会，比方说，在 Linux 而不是在 Windows 上使用 Ruby？
+ 
+一些跨平台工具在构建时假定其运行环境与 Linux 类似。例如，有些工具假定它们能够访问很长的文件路径或存在特定的文件/文件夹。这通常会在 Windows 上造成问题，因为 Windows 的行为通常与 Linux 不同。
           
-          WSL mounts your machine's fixed drives under the `/mnt/<drive>` folder in your Linux distros. For example, your `C:` drive is mounted under `/mnt/c/`.
+许多语言（如 Ruby 和 Node.js）经常被移植到 Windows 上，并在 Windows 上运行良好。然而，并非所有的 Ruby Gem 或 node/NPM 库所有者都会将其库移植到 Windows 上，而且许多库都有特定于 Linux 的依赖关系。这往往会导致使用此类工具和库构建的系统在 Windows 上出现构建错误，有时还会出现运行时错误或不需要的行为。
           
-          Using your mounted drives, you can edit code in, for example, `C:\dev\myproj\` using [Visual Studio](https://visualstudio.microsoft.com/vs/) or [VS Code](https://code.visualstudio.com/), and build/test that code in Linux by accessing the same files via `/mnt/c/dev/myproj`.
-          
-          Learn more in [Working across Windows and Linux file systems](./filesystems.md) article.
+这些问题导致许多人要求 Microsoft 改进 Windows 的命令行工具，也促使我们与 Canonical 合作，使原生的 Bash 和 Linux 命令行工具能够在 Windows 上运行。
+
+### 这对 PowerShell 意味着什么？
+
+在处理开放源码软件项目的过程中，从 PowerShell 转而使用 Bash 会有很多用处。对 Bash 的支持是对 Windows 命令行价值的补充和加强，使 PowerShell 和 PowerShell 社区能够利用其他流行技术。
+
+更多信息请访问 PowerShell 团队博客：[Bash for Windows：为什么它很棒以及它对 PowerShell 的意义](https://devblogs.microsoft.com/powershell/bash-for-windows-why-its-awesome-and-what-it-means-for-powershell/)。
+
+### WSL 支持哪些处理器？
+
+WSL 支持 x64 和 Arm 处理器。
+
+### 我可以怎样访问我的 C: 驱动器？
+
+本地机器上的硬盘驱动器的挂载点会自动创建，从而提供对 Windows 文件系统的轻松访问。
+
+**/mnt/\<驱动器号>/**
+
+例如，你可以使用 `cd /mnt/c` 来访问 c:\。
+
+### 我该如何设定 Git 凭据管理器？（我该如何在 WSL 中使用我的 Windows Git 权限？）
+
+请参阅教程 [在 Windows 子系统上的 Linux 上开始使用 Git](./tutorials/wsl-git.md)，其中包含有关设置 Git 凭据管理器和将身份验证令牌存储在 Windows 凭据管理器中的部分。
+
+### 怎样在 Linux 应用程序中使用 Windows 文件？
+
+WSL 的众多优势之一是能够同时使用 Windows 和 Linux 应用程序或工具访问你的文件。
+
+WSL 会将你的机器的固定驱动器挂载到 Linux 发行版的 `/mnt/<驱动器>` 文件夹下。例如，你的 `C:` 驱动器会挂载到 `/mnt/c/`。
+
+通过挂载的驱动器，你可以使用 [Visual Studio](https://visualstudio.microsoft.com/vs/) 或 [VS Code](https://code.visualstudio.com/) 编辑 `C:\dev\myproj\` 中的代码，并通过 `/mnt/c/dev/myproj` 访问相同的文件来在 Linux 中构建/测试该代码。
+
+了解更多信息，请参阅 [跨 Windows 和 Linux 文件系统工作](./filesystems.md) 文章。
           
       - question: |
          Are files in the Linux drive different from the mounted Windows drive?

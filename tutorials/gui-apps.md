@@ -1,5 +1,5 @@
 ---
-title: 使用 WSL 运行 Linux 中的图形化应用程序 Run Linux GUI apps with WSL 
+title: 使用 WSL 运行 Linux 中的图形化应用程序
 description: Learn how WSL support running Linux GUI apps. 
 ms.date: 01/04/2024
 ms.topic: article

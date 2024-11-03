@@ -10,7 +10,7 @@ ms.custom: seo-windows-dev
 
 适用于 Linux 的 Windows 子系统（WSL）可让开发人员直接在 Windows 上按原样运行 GNU/Linux 环境（包括大多数命令行工具、实用工具和应用程序），且不会产生传统虚拟机或双系统设置开销。
 
-<a class="button button--primary" href="install.md">安装 WSL</a>
+<Link to="install" className="button button--primary">安装 WSL</Link>
 
 ## 了解更多
 

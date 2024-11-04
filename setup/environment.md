@@ -1,5 +1,5 @@
 ---
-title: 设置 WSL 开发环境
+title: 设置适用于 Linux 的 Windows 子系统（WSL）的开发环境
 description: Set up a WSL development environment using best practices from this set-by-step guide. Learn how to run Ubuntu, Visual Studio Code or Visual Studio, Git, Windows Credential Manager, MongoDB, MySQL, Docker remote containers and more.
 ms.date: 11/20/2023
 ms.topic: article
@@ -7,17 +7,17 @@ no-loc: [Terminal]
 ms.custom: seo-windows-dev
 ---
 
-# 设置 WSL 开发环境
+# 设置适用于 Linux 的 Windows 子系统的开发环境
 
-设置 WSL 开发环境的推荐指南。了解如何运行命令以安装使用 Ubuntu 的默认 Bash shell，也可以学习如何设置并安装其他 Linux 发行版、使用基本 WSL 命令、设置 Visual Studio Code 或 Visual Studio、Git、Windows 凭据管理器、运行 MongoDB、Postgres、MySQL 等数据库、设置 GPU 加速、运行 GUI 应用程序等。
+这是设置适用于 Linux 的 Windows 子系统（Windows Subsystem for Linux，以下简称 WSL）开发环境的一个简单示例，你将了解到如何安装使用 Ubuntu 的默认 Bash shell，也可以学习如何设置并安装其他 Linux 发行版，使用基本 WSL 命令，设置 Visual Studio Code 或 Visual Studio、Git、Windows 凭据管理器，运行 MongoDB、Postgres、MySQL 等数据库，设置 GPU 加速，运行 GUI 应用程序等。
 
 ## 开始使用
 
-适用于 Linux 的 Windows 子系统（Windows Subsystem for Linux）由 Windows 操作系统自带，但您必须先启用它并安装 Linux 发行版，才能开始使用它。
+适用于 Linux 的 Windows 子系统（Windows Subsystem for Linux）是由 Windows 操作系统自带的，但您必须先启用这项功能并安装 Linux 发行版，才能开始使用它。
 
-To use the simplified --install command, you must be running a recent build of Windows (Build 20262+). To check your version and build number, select **Windows logo key + R**, type **winver**, select **OK**. You can update using the [Settings menu](ms-settings:windowsupdate) or [Windows Update Assistant](https://www.microsoft.com/software-download/).
+若您想要使用简化的 `--install` 命令，您必须运行最新版本的 Windows 11（内部版本 20262 及以上）。若要检查版本和内部版本号，请选择 **Windows 徽标键 + R**，键入 **winver**，然后选择 **确定**。然后您可以使用 [设置- Windows 更新](ms-settings：windowsupdate) 或 [Windows 安装助手](https://www.microsoft.com/software-download/) 进行更新。
 
-如果您想安装除 Ubuntu 以外的 Linux 发行版，或者希望自定义安装，请参阅 [WSL 安装页面]（../install.md） 了解更多详情。
+如果您想安装 Ubuntu 以外的 Linux 发行版，或者希望自定义安装，请参阅 [WSL 安装页面](../install.md) 了解更多详情。
 
 打开 PowerShell (或 Windows 命令提示符) 并输入：
 
@@ -25,50 +25,51 @@ To use the simplified --install command, you must be running a recent build of W
 wsl --install
 ```
 
-The --install command performs the following actions:
+--install 命令将执行以下操作：
 
-- Enables the optional WSL and Virtual Machine Platform components
-- Downloads and installs the latest Linux kernel
-- Sets WSL 2 as the default
-- Downloads and installs the Ubuntu Linux distribution (reboot may be required)
+- 启用可选的 适用于 Linux 的 Windows 子系统 和 虚拟机平台 组件
+- 下载并安装最新的 Linux 内核
+- 将 WSL 2 设置为默认版本
+- 下载并安装 Ubuntu Linux 发行版（可能需要重新启动）
 
-You will need to restart your machine during this installation process.
+在此安装过程中，您需要重新启动计算机。
 
-![PowerShell command line running wsl --install](../media/wsl-install.png)
+![PowerShell 命令行](../media/wsl-install.png)
 
-Check the [troubleshooting installation](../troubleshooting.md) article if you run into any issues.
+如果您遇到了一些问题，请查阅 [适用于 Linux 的 Windows 子系统疑难解答](../troubleshooting.md) 。
 
-## Set up your Linux username and password
+## 设置您的 Linux 用户名和密码
 
-Once the process of installing your Linux distribution with WSL is complete, open the distribution (Ubuntu by default) using the Start menu. You will be asked to create a **User Name** and **Password** for your Linux distribution.
+在 WSL 上安装完 Linux 发行版后，请在“开始”菜单打开它（默认为 Ubuntu），系统将要求您为此 Linux 发行版创建 **用户名** 和 **密码**。
 
-- This **User Name** and **Password** is specific to each separate Linux distribution that you install and has no bearing on your Windows user name.
+- 此 **用户名** 和 **密码** 仅限于您安装的这一个 Linux 发行版，与您的 Windows 用户名无关。
 
-- Please note that whilst entering the **Password**, nothing will appear on screen. This is called blind typing. You won't see what you are typing, this is completely normal.
+- 请注意，在输入 **密码** 时，屏幕上不会显示任何内容。如果您没有看到输入的密码，这是完全正常的。
 
-- Once you create a **User Name** and **Password**, the account will be your default user for the distribution and automatically sign-in on launch.
+- 设置 **用户名** 和 **密码** 后，该账户将成为默认用户，并在启动此 Linhx 发行版时自动登录。
 
-- This account will be considered the Linux administrator, with the ability to run `sudo` (Super User Do) administrative commands.
+- 此帐户将被视为 Linux 系统管理员，能够运行 `sudo` （Super User Do） 管理命令。
 
-- Each Linux distribution running on WSL has its own Linux user accounts and passwords.  You will have to configure a Linux user account every time you add a distribution, reinstall, or reset.
+- 在 WSL 上运行的每个 Linux 发行版都有自己的 Linux 帐户和密码。 当您每次安装新发行版本、重新安装或重置时，都必须重新配置 Linux 用户帐户。
 
 > [!NOTE]
-> Linux distributions installed with WSL are a per-user installation and can't be shared with other Windows user accounts. Encountering a username error? [StackExchange: What characters should I use or not use in usernames on Linux?](https://serverfault.com/questions/73084/what-characters-should-i-use-or-not-use-in-usernames-on-linux)
+> 随 WSL 一起安装的 Linux 发行版是按用户安装的，不能与其他 Windows 用户帐户共享。遇到用户名错误？[StackExchange： Linux 上用户的名称要求有哪些？](https://serverfault.com/questions/73084/what-characters-should-i-use-or-not-use-in-usernames-on-linux)
 
-![Ubuntu command line enter UNIX username](../media/UbuntuInstall.png)
+![Ubuntu 命令行输入用户名](../media/UbuntuInstall.png)
 
-To change or reset your password, open the Linux distribution and enter the command: `passwd`. You will be asked to enter your current password, then asked to enter your new password, and then to confirm your new password.
 
-If you forgot the password for your Linux distribution:
+要更改或重置密码，请打开 Linux 发行版并输入命令：“passwd”。系统将要求您输入旧密码，然后请您输入新密码，并二次确认您的新密码。
 
-1. Open PowerShell and enter the root of your default WSL distribution using the command: `wsl -u root`
+倘若您忘记了 Linux 发行版的密码，请尝试以下步骤：
 
-    > If you need to update the forgotten password on a distribution that is not your default, use the command: `wsl -d Debian -u root`, replacing `Debian` with the name of your targeted distribution.
+1. 打开 PowerShell，然后使用命令 `wsl -u root` 进入默认 WSL 发行版的根目录；
 
-2. Once your WSL distribution has been opened at the root level inside PowerShell, you can use this command to update your password: `passwd <username>` where `<username>` is the username of the account in the distribution whose password you've forgotten.
+   > 如果您需要在非默认发行版上更新忘记的密码，请使用命令：`wsl -d Debian -u root`，将 `Debian` 替换为目标发行版的名称。
 
-3. You will be prompted to enter a new UNIX password and then confirm that password. Once you're told that the password has updated successfully, close WSL inside of PowerShell using the command: `exit`.
+2. 您可以使用以下命令更新您的密码：`passwd <username>`，其中`<username>` 是您忘记密码的帐户的用户名；
 
+3. 系统将提示您输入新的密码，然后确认该密码。当告知您密码已成功更新后，请使用 `exit` 命令退出 PowerShell 中的 WSL。
+   
 ## Update and upgrade packages
 
 We recommend that you regularly update and upgrade your packages using the preferred package manager for the distribution. For Ubuntu or Debian, use the command:

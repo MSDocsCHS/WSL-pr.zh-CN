@@ -9,17 +9,17 @@ ms.custom: seo-windows-dev
 
 # 设置 WSL 开发环境
 
-A step-by-step guide to the best practices for setting up a WSL development environment. Learn how to run the command to install the default Bash shell that uses Ubuntu or can be set to install other Linux distributions, use basic WSL commands, set up Visual Studio Code or Visual Studio, Git, Windows Credential Manager, databases like MongoDB, Postgres, or MySQL, set up GPU acceleration, run GUI apps, and more.
+设置 WSL 开发环境的推荐指南。了解如何运行命令以安装使用 Ubuntu 的默认 Bash shell，也可以学习如何设置并安装其他 Linux 发行版、使用基本 WSL 命令、设置 Visual Studio Code 或 Visual Studio、Git、Windows 凭据管理器、运行 MongoDB、Postgres、MySQL 等数据库、设置 GPU 加速、运行 GUI 应用程序等。
 
-## Get started
+## 开始使用
 
-Windows Subsystem for Linux comes with the Windows operating system, but you must enable it and install a Linux distribution before you can begin using it.
+适用于 Linux 的 Windows 子系统（Windows Subsystem for Linux）由 Windows 操作系统自带，但您必须先启用它并安装 Linux 发行版，才能开始使用它。
 
 To use the simplified --install command, you must be running a recent build of Windows (Build 20262+). To check your version and build number, select **Windows logo key + R**, type **winver**, select **OK**. You can update using the [Settings menu](ms-settings:windowsupdate) or [Windows Update Assistant](https://www.microsoft.com/software-download/).
 
-If you prefer to install a Linux distribution other than Ubuntu, or would prefer to complete these steps manually, see the [WSL installation page](../install.md) for more details.
+如果您想安装除 Ubuntu 以外的 Linux 发行版，或者希望自定义安装，请参阅 [WSL 安装页面]（../install.md） 了解更多详情。
 
-Open PowerShell (or Windows Command Prompt) and enter:
+打开 PowerShell (或 Windows 命令提示符) 并输入：
 
 ```powershell
 wsl --install

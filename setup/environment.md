@@ -1,6 +1,6 @@
 ---
 title: 设置适用于 Linux 的 Windows 子系统（WSL）的开发环境
-description: Set up a WSL development environment using best practices from this set-by-step guide. Learn how to run Ubuntu, Visual Studio Code or Visual Studio, Git, Windows Credential Manager, MongoDB, MySQL, Docker remote containers and more.
+description: 本指南会帮助你如何设置 WSL 开发环境，运行 Ubuntu、Visual Studio Code、Visual Studio、Git、Windows Credential Manager、MongoDB、MySQL、Docker 远程容器等程序。
 ms.date: 11/20/2023
 ms.topic: article
 no-loc: [Terminal]
@@ -25,7 +25,7 @@ ms.custom: seo-windows-dev
 wsl --install
 ```
 
---install 命令将执行以下操作：
+`--install` 命令将执行以下操作：
 
 - 启用可选的 适用于 Linux 的 Windows 子系统 和 虚拟机平台 组件
 - 下载并安装最新的 Linux 内核
@@ -58,7 +58,7 @@ wsl --install
 ![Ubuntu 命令行输入用户名](../media/UbuntuInstall.png)
 
 
-要更改或重置密码，请打开 Linux 发行版并输入命令：“passwd”。系统将要求您输入旧密码，然后请您输入新密码，并二次确认您的新密码。
+要更改或重置密码，请打开 Linux 发行版并输入命令：`passwd`。系统将要求您输入旧密码，然后请您输入新密码，并二次确认您的新密码。
 
 倘若您忘记了 Linux 发行版的密码，请尝试以下步骤：
 
@@ -70,33 +70,35 @@ wsl --install
 
 3. 系统将提示您输入新的密码，然后确认该密码。当告知您密码已成功更新后，请使用 `exit` 命令退出 PowerShell 中的 WSL。
    
-## Update and upgrade packages
+## 更新包管理器和升级软件包
 
-We recommend that you regularly update and upgrade your packages using the preferred package manager for the distribution. For Ubuntu or Debian, use the command:
+
+建议您使用自带的软件包管理器定期更新和升级软件包。对于 Ubuntu 或 Debian，请使用以下命令：
 
 ```bash
 sudo apt update && sudo apt upgrade
 ```
 
-Windows does not automatically update or upgrade your Linux distribution(s). This is a task that most Linux users prefer to control themselves.
+Windows 不会自动更新或升级您的 Linux 发行版，大多数 Linux 用户更喜欢自己控制它们。
 
-## Add additional distributions
+## 添加更多 Linux 发行版
+要添加其他 Linux 发行版，您可以通过 [Microsoft Store](https://aka.ms/wslstore)、[--import 命令](../use-custom-distro.md) 或 [旁加载您的自定义分发版](../build-custom-distro.md)。您可能还希望 [设置自定义 WSL 映像以在整个企业公司中分发](../enterprise.md)。
 
-To add additional Linux distributions, you can install via the [Microsoft Store](https://aka.ms/wslstore), via the [--import command](../use-custom-distro.md), or by [sideloading your own custom distribution](../build-custom-distro.md). You may also want to [set up custom WSL images for distribution across your enterprise company](../enterprise.md).
+## 配置 Windows 终端
 
-## Set up Windows Terminal
 
-Windows Terminal can run any application with a command line interface. Its main features include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and the ability to create your own themes and customize text, colors, backgrounds, and shortcuts.
+Windows 终端可以使用命令行界面运行任何应用程序。它的主要功能包括多选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本渲染引擎以及创建自定义主题并自定义文本、颜色、背景和快捷方式。
 
-Whenever a new WSL Linux distribution is installed, a new instance will be created for it inside the Windows Terminal that can be customized to your preferences.
+每当安装新的 WSL Linux 发行版时，都会在 Windows 终端中为其创建一个新实例，您的可以根据个人喜好来配置它。
 
-We recommend using WSL with Windows Terminal, especially if you plan to work with multiple command lines. See the Windows Terminal docs for help with setting it up and customizing your preferences, including:
 
-- [Install Windows Terminal or Windows Terminal (Preview)](/windows/terminal/get-started) from the Microsoft Store
-- [Use the Command Palette](/windows/terminal/get-started#invoke-the-command-palette)
-- Set up [custom actions](/windows/terminal/#custom-actions) like keyboard shortcuts to make the terminal feel natural to your preferences
-- Set up the [default startup profile](/windows/terminal/customize-settings/startup)
-- Customize the appearance: [theme](/windows/terminal/customize-settings/appearance#theme), [color schemes](/windows/terminal/customize-settings/color-schemes), [name and starting directory](/windows/terminal/customize-settings/profile-general), [background image](/windows/terminal/customize-settings/profile-appearance#background-image), etc.
+我们建议将 WSL 与 Windows 终端配合使用，尤其是在您想要使用多个命令行时。请参阅 Windows 终端文档，获取有关设置和自定义首选项的帮助，例如：
+
+- 从 Microsoft Store [安装 Windows 终端或 Windows 终端（预览版）](/windows/terminal/get-started)；
+- [使用命令面板](/windows/terminal/get-started#invoke-the-command-palette)
+- 设置[自定义操作](/windows/terminal/#custom-actions)（例如键盘快捷键）让你感到更自然
+- 更改默认[启动设置](/windows/terminal/customize-settings/startup)
+- 自定义外观: [主题](/windows/terminal/customize-settings/appearance#theme), [配色方案](/windows/terminal/customize-settings/color-schemes), [常规配置文件](/windows/terminal/customize-settings/profile-general), [背景图片](/windows/terminal/customize-settings/profile-appearance#background-image)等.
 - Learn how to use [command line arguments](/windows/terminal/command-line-arguments?tabs=windows) like opening a terminal with multiple command lines split into window panes or tabs
 - Learn about the [search feature](/windows/terminal/search)
 - Find [tips and tricks](/windows/terminal/tips-and-tricks), like how to rename or color a tab, use mouse interactions, or enable "Quake mode"

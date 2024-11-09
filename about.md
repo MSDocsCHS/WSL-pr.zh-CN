@@ -7,39 +7,36 @@ ms.topic: article
 
 # 什么是适用于 Linux 的 Windows 子系统？
 
-Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.  WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
+适用于 Linux 的 Windows 子系统 (WSL) 是 Windows 的一个功能，允许您在 Windows 机器上运行 Linux 环境，而无需单独的虚拟机或双系统。WSL 旨在为希望同时使用 Windows 和 Linux 的开发人员提供无缝且高效的体验。
 
-- Use WSL to install and run various Linux distributions, such as Ubuntu, Debian, Kali, and more. [Install Linux distributions](./install.md) and receive automatic updates from the [Microsoft Store](./compare-versions.md#wsl-in-the-microsoft-store), [import Linux distributions not available in the Microsoft Store](./use-custom-distro.md), or [build your own custom Linux distribution](./build-custom-distro.md).
-- Store files in an isolated Linux file system, specific to the installed distribution.
-- Run command-line tools, such as BASH.
-- Run common BASH command-line tools such as `grep`, `sed`, `awk`, or other ELF-64 binaries.
-- Run Bash scripts and GNU/Linux command-line applications including:  
-  - Tools: vim, emacs, tmux
-  - Languages: [NodeJS](/windows/nodejs/setup-on-wsl2), JavaScript, [Python](/windows/python/web-frameworks), Ruby, C/C++, C# & F#, Rust, Go, etc.
-  - Services: SSHD, [MySQL](./tutorials/wsl-database.md), Apache, lighttpd, [MongoDB](./tutorials/wsl-database.md), [PostgreSQL](./tutorials/wsl-database.md).
-- Install additional software using your own GNU/Linux distribution package manager.
-- Invoke Windows applications using a Unix-like command-line shell.
-- Invoke GNU/Linux applications on Windows.
-- [Run GNU/Linux graphical applications](./tutorials/gui-apps.md) integrated directly to your Windows desktop
-- Use your device [GPU to accelerate Machine Learning workloads running on Linux.](./tutorials/gpu-compute.md)
+- 使用 WSL 安装和运行各种 Linux 发行版，如 Ubuntu、Debian、Kali 等。[安装 Linux 发行版](./install.md) 并从 [Microsoft Store](./compare-versions.md#wsl-in-the-microsoft-store) 接收自动更新，或 [导入不在 Microsoft Store 中可用的 Linux 发行版](./use-custom-distro.md)，或 [构建自己的自定义 Linux 发行版](./build-custom-distro.md)。
+- 在已安装的发行版中的隔离的 Linux 文件系统中存储文件。
+- 运行命令行工具，如 BASH。
+- 运行常见的 BASH 命令行工具，如 `grep`、`sed`、`awk` 或其他 ELF-64 二进制文件。
+- 运行 Bash 脚本和 GNU/Linux 命令行应用程序，包括：  
+  - 工具：vim、emacs、tmux
+  - 语言：[NodeJS](/windows/nodejs/setup-on-wsl2)、JavaScript、[Python](/windows/python/web-frameworks)、Ruby、C/C++、C# 和 F#、Rust、Go 等。
+  - 服务：SSHD、[MySQL](./tutorials/wsl-database.md)、Apache、lighttpd、[MongoDB](./tutorials/wsl-database.md)、[PostgreSQL](./tutorials/wsl-database.md)。
+- 使用自己的 GNU/Linux 发行版的软件包管理器安装其他软件。
+- 使用类 Unix 的命令行 shell 调用 Windows 应用程序。
+- 在 Windows 上调用 GNU/Linux 应用程序。
+- [运行直接集成到 Windows 桌面的 GNU/Linux 图形应用程序](./tutorials/gui-apps.md)。
+- [使用设备的 GPU 加速在 Linux 上运行的机器学习工作负载](./tutorials/gpu-compute.md)。
 
-> [!div class="nextstepaction"]
-> [Install WSL](install.md)
+<a class="button button--primary" href="install">安装 WSL</a>
 
-<br />
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/48k317kOxqg" frameborder="0" allowfullscreen="true" data-linktype="external" title="视频: 48k317kOxqg"></iframe></div>
 
-> [!VIDEO https://www.youtube.com/embed/48k317kOxqg]
+## WSL 2 是什么？
 
-## What is WSL 2?
+WSL 2 是安装 Linux 发行版时的默认发行版类型。WSL 2 使用虚拟化技术在轻量级实用虚拟机 (VM) 中运行 Linux 内核。Linux 发行版作为 WSL 2 管理的 VM 中的隔离容器运行。通过 WSL 2 运行的 Linux 发行版将共享相同的网络命名空间、设备树 (除了 `/dev/pts` 之外)、CPU/内核/内存/交换（Swap）、`/init` 二进制文件，但具有自己的 PID 命名空间、Mount 命名空间、用户命名空间、Cgroup 命名空间和 `init` 进程。
 
-WSL 2 is the default distro type when installing a Linux distribution. WSL 2 uses virtualization technology to run a Linux kernel inside of a lightweight utility virtual machine (VM). Linux distributions run as isolated containers inside of the WSL 2 managed VM. Linux distributions running via WSL 2 will share the same network namespace, device tree (other than `/dev/pts`), CPU/Kernel/Memory/Swap, `/init` binary, but have their own PID namespace, Mount namespace, User namespace, Cgroup namespace, and `init` process. 
+相较于 WSL 1 的架构，WSL 2 **提高了文件系统性能**，并增加了 **完整的系统调用兼容性**。了解有关 [WSL 1 和 WSL 2 的比较](./compare-versions.md)。
 
-WSL 2 **increases file system performance** and adds **full system call compatibility** in comparison to the WSL 1 architecture. Learn more about how [WSL 1 and WSL 2 compare](./compare-versions.md). 
+独立的 Linux 发行版可以使用 WSL 1 或 WSL 2 架构运行。每个发行版都可以随时升级或降级，您可以同时运行 WSL 1 和 WSL 2 发行版。请参阅 [设置 WSL 版本命令](/windows/wsl/basic-commands#set-default-wsl-version)。
 
-Individual Linux distributions can be run with either the WSL 1 or WSL 2 architecture. Each distribution can be upgraded or downgraded at any time and you can run WSL 1 and WSL 2 distributions side by side. See the [Set WSL version command](/windows/wsl/basic-commands#set-default-wsl-version).
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/MrZolfGm8Zk" frameborder="0" allowfullscreen="true" data-linktype="external" title="视频: MrZolfGm8Zk"></iframe></div>
 
-> [!VIDEO https://www.youtube.com/embed/MrZolfGm8Zk]
+## Microsoft 热爱 Linux
 
-## Microsoft Loves Linux
-
-Learn more about [Linux resources at Microsoft](/linux), including Microsoft tools that run on Linux, Linux training courses, Cloud Solution Architecture for Linux, and Microsoft + Linux news, events, and partnerships. **Microsoft Loves Linux!**
+了解有关 [Microsoft 的 Linux 资源](/linux) 的更多信息，包括在 Linux 上运行的 Microsoft 工具、Linux 培训课程、适用于 Linux 的云解决方案架构以及 Microsoft + Linux 的新闻、活动和合作伙伴关系。**Microsoft 热爱 Linux！**

@@ -15,7 +15,7 @@ ms.custom: seo-windows-dev
 
 适用于 Linux 的 Windows 子系统（Windows Subsystem for Linux）是由 Windows 操作系统自带的，但您必须先启用这项功能并安装 Linux 发行版，才能开始使用它。
 
-若您想要使用简化的 `--install` 命令，必须运行最新版本的 Windows 11（内部版本 20262 及以上）。若要检查版本和内部版本号，请选择 **Windows 徽标键 + R**，键入 **winver**，然后选择 **确定**。然后您可以使用 [设置- Windows 更新](ms-settings：windowsupdate) 或 [Windows 安装助手](https://www.microsoft.com/software-download/) 进行更新。
+若要使用简化的 `--install` 命令，您必须运行最新版本的 Windows 11（内部版本 20262 及以上）。若要检查版本和内部版本号，请按下 **Windows 徽标键 + R**，键入 **winver**，然后选择 **确定**。您可以使用 [设置- Windows 更新](ms-settings:windowsupdate) 或 [Windows 安装助手](https://www.microsoft.com/software-download/) 进行更新。
 
 如果您想安装 Ubuntu 以外的 Linux 发行版，或者希望自定义安装，请参阅 [WSL 安装页面](../install.md) 了解更多详情。
 

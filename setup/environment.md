@@ -52,11 +52,13 @@ wsl --install
 
 - 在 WSL 上运行的每个 Linux 发行版都有自己的 Linux 帐户和密码。 当您每次安装新发行版本、重新安装或重置时，都必须重新配置 Linux 用户帐户。
 
-> [!NOTE]
-> 随 WSL 一起安装的 Linux 发行版是按用户安装的，不能与其他 Windows 用户帐户共享。遇到用户名错误？[StackExchange： Linux 上用户的名称要求有哪些？](https://serverfault.com/questions/73084/what-characters-should-i-use-or-not-use-in-usernames-on-linux)
+:::note
+
+随 WSL 一起安装的 Linux 发行版是按用户安装的，不能与其他 Windows 用户帐户共享。遇到用户名错误？[StackExchange： Linux 上用户的名称要求有哪些？](https://serverfault.com/questions/73084/what-characters-should-i-use-or-not-use-in-usernames-on-linux)
+
+:::
 
 ![Ubuntu 命令行输入用户名](../media/UbuntuInstall.png)
-
 
 要更改或重置密码，请打开 Linux 发行版并输入命令：`passwd`。系统将要求您输入旧密码，然后请您输入新密码，并二次确认您的新密码。
 
@@ -69,9 +71,8 @@ wsl --install
 2. 您可以使用以下命令更新您的密码：`passwd <username>`，其中`<username>` 是您忘记密码的帐户的用户名；
 
 3. 系统将提示您输入新的密码，然后确认该密码。当告知您密码已成功更新后，请使用 `exit` 命令退出 PowerShell 中的 WSL。
-   
-## 更新包管理器和升级软件包
 
+## 更新包管理器和升级软件包
 
 建议您使用自带的软件包管理器定期更新和升级软件包。对于 Ubuntu 或 Debian，请使用以下命令：
 
@@ -82,15 +83,14 @@ sudo apt update && sudo apt upgrade
 Windows 不会自动更新或升级您的 Linux 发行版，大多数 Linux 用户更喜欢自己控制它们。
 
 ## 添加更多 Linux 发行版
+
 要添加其他 Linux 发行版，您可以通过 [Microsoft Store](https://aka.ms/wslstore)、[--import 命令](../use-custom-distro.md) 或 [旁加载您的自定义分发版](../build-custom-distro.md)。您可能还希望 [设置自定义 WSL 映像以在整个企业公司中分发](../enterprise.md)。
 
 ## 配置 Windows 终端
 
-
 Windows 终端可以使用命令行界面运行任何应用程序。它的主要功能包括多选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本渲染引擎以及创建自定义主题并自定义文本、颜色、背景和快捷方式。
 
 每当安装新的 WSL Linux 发行版时，都会在 Windows 终端中为其创建一个新实例，您可以根据个人喜好来配置它。
-
 
 我们建议将 WSL 与 Windows 终端配合使用，尤其是在您想要使用多个命令行时。请参阅 Windows 终端文档，获取有关设置和自定义首选项的帮助，例如：
 
@@ -148,6 +148,7 @@ Windows 终端可以使用命令行界面运行任何应用程序。它的主要
 ![在命令行显示 Git 版本](../media/git-versions.gif)
 
 ## 使用 Docker 设置远程开发容器
+
 查阅[开始使用 WSL 2 上的 Docker 远程容器](../tutorials/wsl-containers.md)指南，使用 Docker Desktop for Windows 将项目连接到远程开发容器。
 
 ![Docker Desktop 屏幕截图](../media/docker-running.png)
@@ -165,6 +166,7 @@ Windows 终端可以使用命令行界面运行任何应用程序。它的主要
 ![在 WSL 中使用 GPU 加速](../media/gpu-acceleration.gif)
 
 ## 基础 WSL 命令
+
 通过 WSL 安装的 Linux 发行版最好使用 PowerShell 或 Windows 命令提示符 (CMD) 进行管理。 有关使用 WSL 时需要熟悉的基本命令的列表，请查阅 [WSL 命令参考指南](../basic-commands.md)。
 
 此外，许多命令在 Windows 和 Linux 之间都可以交互。例如：

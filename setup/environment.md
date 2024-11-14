@@ -34,7 +34,7 @@ wsl --install
 
 在此安装过程中，您需要重新启动计算机。
 
-![PowerShell 命令行](../media/wsl-install.png)
+![运行 wsl --install 的 PowerShell 命令行](../media/wsl-install.png)
 
 如果您遇到了一些问题，请查阅 [适用于 Linux 的 Windows 子系统疑难解答](../troubleshooting.md) 。
 

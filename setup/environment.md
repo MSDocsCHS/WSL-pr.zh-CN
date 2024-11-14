@@ -36,7 +36,7 @@ wsl --install
 
 ![运行 wsl --install 的 PowerShell 命令行](../media/wsl-install.png)
 
-如果您遇到了一些问题，请查阅 [适用于 Linux 的 Windows 子系统疑难解答](../troubleshooting.md) 。
+如果您遇到了一些问题，请查阅 [安装疑难解答](../troubleshooting.md) 。
 
 ## 设置您的 Linux 用户名和密码
 

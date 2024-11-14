@@ -1,5 +1,5 @@
 ---
-title: 设置适用于 Linux 的 Windows 子系统（WSL）的开发环境
+title: 设置 WSL 开发环境
 description: 本指南会帮助你设置 WSL 开发环境，运行 Ubuntu、Visual Studio Code、Visual Studio、Git、Windows Credential Manager、MongoDB、MySQL、Docker 远程容器等程序。
 ms.date: 11/20/2023
 ms.topic: article

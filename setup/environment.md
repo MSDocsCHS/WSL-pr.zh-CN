@@ -17,7 +17,7 @@ ms.custom: seo-windows-dev
 
 若要使用简化的 `--install` 命令，您必须运行最新版本的 Windows 11（内部版本 20262 及以上）。若要检查版本和内部版本号，请按下 **Windows 徽标键 + R**，键入 **winver**，然后选择 **确定**。您可以使用 [设置- Windows 更新](ms-settings:windowsupdate) 或 [Windows 安装助手](https://www.microsoft.com/software-download/) 进行更新。
 
-如果您想安装 Ubuntu 以外的 Linux 发行版，或者希望自定义安装，请参阅 [WSL 安装页面](../install.md) 了解更多详情。
+如果您想安装 Ubuntu 以外的 Linux 发行版，或者希望手动完成这些步骤，请参阅 [安装 WSL](../install.md) 页面了解更多详情。
 
 打开 PowerShell (或 Windows 命令提示符) 并输入：
 

@@ -19,12 +19,17 @@ jobs:
         run: |
           git remote add upstream https://github.com/MicrosoftDocs/WSL.git
           git fetch upstream
+          git checkout -b sync-upstream-branch
           git merge upstream/main --no-commit
+
+      - name: Set Git user
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit changes
         run: |
           git commit -m "Sync with upstream changes" || echo "No changes to commit"
-
       - name: Push changes to sync branch
         run: |
           git push origin sync
